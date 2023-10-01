@@ -1,5 +1,5 @@
 import express from "express";
-import  expressStatic  from "static";
+import  Static  from "express";
 import bodyParser from "body-parser";
 import lodash from "lodash";
 
@@ -15,7 +15,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(expressStatic("public"));
+app.use(Static("public"));
 
 let posts = [];
 
