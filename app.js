@@ -1,5 +1,5 @@
 import express from "express";
-import  static as expressStatic  from "express";
+import  expressStatic  from "static";
 import bodyParser from "body-parser";
 import lodash from "lodash";
 
